@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # PictchMatch
-## hello world
 =======
 # PitchMatch - 음역대 기반 음악 추천 서비스
 
