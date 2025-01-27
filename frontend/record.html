@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/pages/record.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- 블러 처리된 배경 -->
-        <div class="background-blur"></div>
+      <!-- 블러 처리된 배경 -->
+      <div class="background-blur"></div>
 
-        <!-- 헤더 -->
-        <header class="header">
-            <img class="logo" src="pictures/logo.png" alt="PitchMatch Logo" />
-        </header>
+      <!-- 헤더 -->
+      <header class="header">
+        <img class="logo" src="pictures/logo.png" alt="PitchMatch Logo" />
+      </header>
 
-        <!-- 콘텐츠 -->
-        <div class="container">
-            <div class="backButton_box">
-                <a href="home.html">
-                    <img class="backButton" src="pictures/back_button.png" alt="Back Button" />
-                </a>
-            </div>
-            <div class="basic_box">
-                <div class="procedure_box">
-                    <p class="procedure_title">
-                        측정 방법
-                    </p>
-                    <p class="procedure">
-                        1. '시작하기' 버튼을 누른다.
-                        <br /> 2. 소리가 나오면 해당 음을 1초동안 소리내어 녹음한다. (기회는 총 3번!)
-                        <br /> 3. 측정이 완료되면 음역대 분석하기 버튼을 누른다.
-                    </p>
-                </div>
-                <div class="octave">
-                    <p> 현재 옥타브: 4 </p>
-                </div>
-                <div class="piano_container">
-                    <img class="piano" src="pictures/piano.png" alt="Piano" />
-                    <p class="note_text"> 최고음 측정 </p>
-                </div>
-                <div class="record_buttons">
-                    <a href="result.html">
-                        <img class="startButton" src="pictures/start_button.png" alt="Start Button" />
-                    </a>                    
-                    <img class="analysisButton_1" src="pictures/analysis_button_1.png" alt="Analysis Button 1" />
-                </div>
-            </div>
+      <!-- 콘텐츠 -->
+      <div class="container">
+        <div class="backButton_box">
+          <a href="home.html">
+            <img
+              class="backButton"
+              src="pictures/back_button.png"
+              alt="Back Button"
+            />
+          </a>
         </div>
+        <div class="basic_box">
+          <div class="procedure_box">
+            <p class="procedure_title">측정 방법</p>
+            <p class="procedure">
+              1. '시작하기' 버튼을 누른다.
+              <br />
+              2. 소리가 나오면 해당 음을 1초동안 소리내어 녹음한다. (기회는 총
+              3번!) <br />
+              3. 측정이 완료되면 음역대 분석하기 버튼을 누른다.
+            </p>
+          </div>
+          <div class="octave">
+            <p>현재 옥타브: 4</p>
+          </div>
+          <div class="note_text">
+            <p class="note_text">최고음 측정</p>
+          </div>
+          <div class="piano_container">
+            <img class="piano" src="pictures/piano.png" alt="Piano" />
+          </div>
+          <div class="record_buttons">
+            <a href="result.html">
+              <img
+                class="startButton"
+                src="pictures/start_button.png"
+                alt="Start Button"
+              />
+            </a>
+            <img
+              class="analysisButton_1"
+              src="pictures/analysis_button_1.png"
+              alt="Analysis Button 1"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,89 @@
+.basic_box .procedure_box {
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column;
+  justify-content: center; /* 수평 중앙 정렬 */
+
+  width: 750px;
+  height: 170px;
+  background-color: #f5f7ff;
+  border-radius: 12px;
+
+  position: relative;
+  bottom: 50px;
+}
+
+.basic_box .procedure_box .procedure_title {
+  font-weight: 700;
+  color: #98b5ff;
+  font-size: 18.7px;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.basic_box .procedure_box .procedure {
+  font-weight: 400;
+  color: #8e9aaf;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 12%;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.basic_box .octave {
+  font-weight: 700;
+  color: #ff7c98;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+
+  position: relative;
+  bottom: 25px;
+}
+
+.basic_box .piano_container {
+  display: flex;
+  align-items: center;
+}
+
+.basic_box .piano_container .piano {
+  width: 200px;
+  height: 150px;
+}
+
+.note_text {
+  font-weight: 400;
+  color: #989898;
+  font-size: 14px;
+  white-space: nowrap;
+
+  position: relative;
+  left: 35px;
+  bottom: 2px;
+}
+
+.basic_box .record_buttons {
+  display: flex; /* Flexbox 활성화 */
+  flex-direction: column; /* 버튼을 세로로 배열 */
+  align-items: center; /* 버튼을 세로로 중앙 정렬 */
+
+  position: relative;
+  top: 50px;
+}
+
+.basic_box .record_buttons .startButton {
+  margin-top: 10px;
+  width: 200px; /* 버튼의 너비 */
+  height: auto; /* 버튼의 높이 */
+  cursor: pointer;
+}
+
+.basic_box .record_buttons .analysisButton_1 {
+  margin-top: 15px;
+  width: 200px; /* 버튼의 너비 */
+  height: auto; /* 버튼의 높이 */
+}
