@@ -6,382 +6,103 @@
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* home.css */
 
 .wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /* 블러 처리된 배경 */
 .background-blur {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('pictures/background.png'); /* 배경 이미지 경로 */
-    background-size: cover; /* 화면 크기에 맞게 조정 */
-    background-repeat: no-repeat; /* 이미지 반복 방지 */
-    background-position: center; /* 이미지 중앙 배치 */
-    background-color: #ffe3e94c;
-    filter: blur(10px); /* 블러 효과 적용 */
-    z-index: -1; /* 다른 콘텐츠 뒤로 배치 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("pictures/background.png"); /* 배경 이미지 경로 */
+  background-size: cover; /* 화면 크기에 맞게 조정 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  background-position: center; /* 이미지 중앙 배치 */
+  background-color: #ffe3e94c;
+  filter: blur(10px); /* 블러 효과 적용 */
+  z-index: -1; /* 다른 콘텐츠 뒤로 배치 */
 }
 
 .header {
-    position: fixed;
-    width: 100%;
-    height: 57px;
-    top: 0;
-    left: 0;
-    z-index: 10; /* 헤더가 배경 위에 표시되도록 설정 */
-    background-color: #ffffff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  height: 57px;
+  top: 0;
+  left: 0;
+  z-index: 10; /* 헤더가 배경 위에 표시되도록 설정 */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
-    width: 150px; 
-    height: auto; 
-    margin: 11px;
-    margin-left: 100px;
+  width: 150px;
+  height: auto;
+  margin: 11px;
+  margin-left: 100px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 57px;
-    z-index: 1; /* 배경 위에 콘텐츠 표시 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 57px;
+  z-index: 1; /* 배경 위에 콘텐츠 표시 */
 }
 
 .microphone_box {
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 33vh;
-    color: #666666;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 33vh;
+  color: #666666;
 }
 
 .microphone {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .welcome_box {
-    position: relative;
-    display: flex; /* Flexbox 사용 */
-    flex-direction: column; 
-    justify-content: center; /* 수평 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    width: 700px;
-    height: 250px;
-    top: 150px;
-    background-color: #ffffffd9;
-    border-radius: 12px;
+  position: relative;
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  width: 700px;
+  height: 250px;
+  top: 150px;
+  background-color: #ffffffd9;
+  border-radius: 12px;
 }
 
 .welcome_box .logo {
-    width: 230px; 
-    height: auto; 
+  width: 230px;
+  height: auto;
 }
 
 .welcome_box .welcome {
-    font-family: "Cera Pro-Regular", Helvetica;
-    font-weight: 400;
-    color: #666666;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: 0;
-    line-height: 30px;
-}
-
-/* record.css 에 추가된 사항 */
-
-.backButton_box {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 5vh;
-    left: 25%;
-    color: #666666;
-}
-
-.backButton {
-    width: 100%;
-    height: auto;
-}
-
-.basic_box {
-    position: relative;
-    display: flex; /* Flexbox 사용 */
-    flex-direction: column; 
-    justify-content: center; /* 수평 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    width: 800px;
-    height: 500px;
-    background-color: #ffffffff;
-    border-radius: 12px;
-}
-
-.basic_box .procedure_box {
-    position: relative;
-    display: flex; /* Flexbox 사용 */
-    flex-direction: column; 
-    justify-content: center; /* 수평 중앙 정렬 */
-    width: 750px;
-    height: 150px;
-    background-color: #F5F7FF;
-    border-radius: 12px;
-}
-
-.basic_box .procedure_box .procedure_title {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #98B5FF;
-    font-size: 18.7px;
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: 0;
-    line-height: 30px;
-}
-
-.basic_box .procedure_box .procedure {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #8E9AAF;
-    font-size: 16px;
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 12%;
-    letter-spacing: 0;
-    line-height: 30px;
-}       
-
-.basic_box .octave {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #FF7C98;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: 0;
-    line-height: 30px;
-}
-
-.basic_box .piano_container {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.basic_box .piano_container .piano {
-    position: relative;
-    width: 200px;            
-    height: 150px; 
-}
-
-.basic_box .piano_container .note_text {
-    position: absolute;
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #989898;
-    font-size: 14px;
-    text-align: left;
-    white-space: nowrap;
-    margin-top: 130px;
-    margin-left: 220px;
-}
-
-.basic_box .record_buttons {
-    display: flex; /* Flexbox 활성화 */
-    flex-direction: column; /* 버튼을 세로로 배열 */
-    align-items: center; /* 버튼을 세로로 중앙 정렬 */
-
-}
-
-.basic_box .record_buttons .startButton {
-    margin-top: 10px;
-    width: 150px; /* 버튼의 너비 */
-    height: auto; /* 버튼의 높이 */
-    cursor: pointer;
-}
-
-.basic_box .record_buttons .analysisButton_1 {
-    margin-top: 10px;
-    width: 150px; /* 버튼의 너비 */
-    height: auto; /* 버튼의 높이 */
-}
-
-/* result.html 에 추가된 사항 */
-
-.basic_box .result {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #FF7C98;
-    font-size: 32px;
-    text-align: center;
-    margin-top: 10px;
-    line-height: 30px;
-}
-
-.basic_box .info {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #8E9AAF;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 10px;
-    line-height: 30px;
-    margin-bottom: 10px;
-}
-
-.range_box {
-    position: relative;
-    display: flex; /* Flexbox 사용 */
-    flex-direction: column; 
-    align-items: center;
-    width: 700px;
-    height: 150px;
-    background-color: #FEF6F8;
-    border-radius: 12px;
-}
-
-.range_box .range_title {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #FF7C98;
-    font-size: 20px;
-    margin-top: 10px;
-    width: 94%; 
-}
-
-.range_box .range_1 {
-    position: absolute;
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #8E9AAF;
-    font-size: 18px;
-    text-align: left;
-    white-space: nowrap;
-    margin-top: 60px;
-    margin-right: 60%;
-}
-
-.range_box .bar {
-    position: absolute;
-    width: 200px; 
-    height: auto;
-    margin-top: 60px;
-}
-
-.range_box .range_2 {
-    position: absolute;
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #8E9AAF;
-    font-size: 18px;
-    text-align: left;
-    white-space: nowrap;
-    margin-top: 60px;
-    margin-left: 60%;
-}
-
-.range_box .range_3 {
-    position: absolute;
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #8E9AAF;
-    font-size: 16px;
-    text-align: left;
-    white-space: nowrap;
-    margin-top: 110px;
-    width: 94%; 
-}
-
-.compare_box {
-    position: relative;
-    display: flex; /* Flexbox 사용 */
-    flex-direction: column; 
-    justify-content: flex-start; /* 위쪽 정렬 */
-    align-items: flex-start; /* 왼쪽 정렬 */
-    width: 700px;
-    height: auto; /* 높이를 내용에 맞게 자동 조정 */
-    top: 20px;
-    background-color: #F5F7FF;
-    border-radius: 12px;
-    padding: 20px; /* 내부 여백 추가 */
-}
-
-.compare_box .compare_title {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #98B5FF;
-    font-size: 20px;
-    margin-bottom: 10px; /* 아래쪽 여백 추가 */
-}
-
-.compare_box .compare_1,
-.compare_box .compare_2 {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #8E9AAF;
-    font-size: 16px;
-
-    word-wrap: break-word; /* 긴 문장을 줄내림 */
-    white-space: normal; /* 텍스트를 여러 줄로 표시 */
-    width: 90%; /* 부모 박스 너비에 맞춤 */
-    margin-top: 10px; /* 각 요소 간 간격 추가 */
-}
-
-
-.discoverButton {
-    margin-top: 30px;
-    width: 500px; /* 버튼의 너비 */
-    height: auto; /* 버튼의 높이 */
-    cursor: pointer;
-}
-
-/* recommend.html 에 추가된 사항 */
-
-.recommend_box {
-    position: relative;
-    display: flex; /* Flexbox 사용 */
-    flex-direction: column; 
-    justify-content: flex-start; /* 위쪽 정렬 */
-    align-items: flex-start; /* 왼쪽 정렬 */
-    width: 700px;
-    height: 300px; /* 높이를 내용에 맞게 자동 조정 */
-    top: 20px;
-    background-color: #F5F7FF;
-    border-radius: 12px;
-    padding: 20px; /* 내부 여백 추가 */
-}
-
-.recommend_box .recommend_title {
-    font-family: "Roboto", Helvetica;
-    font-weight: 400;
-    color: #98B5FF;
-    font-size: 20px;
-    margin-bottom: 10px; /* 아래쪽 여백 추가 */
-}
-
-       
-.musicButton {
-    margin-top: 40px;
-    width: 500px; /* 버튼의 너비 */
-    height: auto; /* 버튼의 높이 */
-    cursor: pointer;
+  font-family: "Cera Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #666666;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 0;
+  line-height: 30px;
 }

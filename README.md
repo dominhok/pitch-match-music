@@ -1,22 +1,19 @@
-# PictchMatch
-=======
 # PitchMatch - 음역대 기반 음악 추천 서비스
 
-PitchMatch는 사용자의 음역대를 분석하고, 해당 음역대에 적합한 음악을 추천하는 웹 서비스입니다. Pesto 모델을 활용한 음성 피치 추정(Pitch Estimation) 기능을 기반으로, 사용자의 보컬 특성을 정확하게 파악합니다.
+PitchMatch는 사용자의 음역대를 분석하고, 해당 음역대에 적합한 음악을 추천하는 웹 서비스입니다. Pesto 모델을 활용한 음성 피치 추정(Pitch Estimation) 기능을 기반으로, 사용자의 음역대를 정확하게 파악합니다.
 
 ## 주요 기능
 
 - **음역대 분석:** 사용자의 목소리를 분석하여 최적의 음역대를 탐색
 - **맞춤형 음악 추천:** 음역대에 맞는 곡 추천 및 연습 곡 제공
-- **실시간 피드백:** 사용자가 노래를 부르는 동안 실시간 피드백 제공
 - **웹 기반 서비스:** 별도의 설치 없이 브라우저에서 사용 가능
 
 ---
 
 ## 기술 스택
 
-- **프론트엔드:** React, TailwindCSS
-- **백엔드:** FastAPI, Python
+- **프론트엔드:** HTML/CSS, Vanila JS
+- **백엔드:** FastAPI
 - **모델:** Pesto (Pitch Estimation 모델)
 - **데이터베이스:** PostgreSQL
 - **클라우드:** AWS (S3, EC2, RDS)
@@ -96,10 +93,10 @@ DATABASE_URL=postgresql://user:password@localhost:5432/pitchmatch
 
 ## API 엔드포인트
 
-| 메서드 | 엔드포인트          | 설명                |
-|--------|-------------------|---------------------|
-| POST   | /analyze           | 사용자의 음역대 분석 |
-| GET    | /recommendations   | 추천 곡 리스트 조회 |
+| 메서드 | 엔드포인트       | 설명                 |
+| ------ | ---------------- | -------------------- |
+| POST   | /analyze         | 사용자의 음역대 분석 |
+| GET    | /recommendations | 추천 곡 리스트 조회  |
 
 ---
 
@@ -170,4 +167,4 @@ DATABASE_URL=postgresql://user:password@localhost:5432/pitchmatch
 
 감사합니다!
 
->>>>>>> e16379ee6511120c66a01563ab2dc46c79da2bae
+> > > > > > > e16379ee6511120c66a01563ab2dc46c79da2bae
