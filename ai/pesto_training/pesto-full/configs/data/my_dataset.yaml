@@ -1,0 +1,5 @@
+defaults:
+  - default
+
+audio_files: dataset/my_dataset.csv
+annot_files: dataset/my_dataset_annot.csv
