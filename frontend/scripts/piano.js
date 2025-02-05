@@ -21,20 +21,16 @@ const noteOffsets = {
 };
 
 // 현재 옥타브 값에 따라 해당 음의 주파수를 계산하는 함수
+
 function getFrequency(note) {
-  // 만약 note가 "C2"와 같이 끝에 숫자가 있으면, 이를 다음 옥타브의 C로 해석합니다.
   let octave = currentOctave;
-  if (/\d$/.test(note)) {
-    // 예: "C2" → note: "C", octave: currentOctave + 1
-    note = note.replace(/\d$/, "");
-    octave += 1;
-  }
   const offset = noteOffsets[note];
   if (offset === undefined) return null;
-  // C4 (261.63Hz)를 기준으로, 옥타브와 반음에 따른 주파수 계산
+  
   const frequency = 261.63 * Math.pow(2, octave - 4 + offset / 12);
   return frequency;
 }
+
 
 // 사인파로 음을 재생하는 함수 (페이드 인/아웃 적용)
 function playSine(note, duration = 0.5) {
@@ -74,7 +70,7 @@ function playSine(note, duration = 0.5) {
 const keys = document.querySelectorAll(".white-key, .black-key");
 
 // 피아노 음 순서 (자동 연주용)
-const noteSequence = ["C", "D", "E", "F", "G", "A", "B", "C2"];
+const noteSequence = ["C", "D", "E", "F", "G", "A", "B"];
 
 // 모든 건반 클릭 이벤트 추가
 keys.forEach((key) => {

@@ -41,14 +41,14 @@
               1. 현재 옥타브 숫자를 눌러, 입력하실 옥타브를 선택해 주세요. (남:
               3~4 옥타브 여: 4~5 옥타브)
               <br />
-              2. 피아노의 건반을 누르시면, 녹음할 스케일을 들어볼 수
+              2. 피아노의 첫번 째 건반을 누르시면, 녹음할 스케일을 들어볼 수
               있습니다.<br />
-              3. 시작하기 버튼을 눌러, 피아노의 박자에 맞추어 스케일을 8초동안
+              3. 시작하기 버튼을 눌러, 피아노의 박자에 맞추어 스케일을 7초동안
               소리내어 녹음해주세요.
             </p>
           </div>
           <div class="octave">
-            <p>현재 옥타브: 4</p>
+            <p>현재 옥타브: 3</p>
           </div>
           <div class="piano">
             <!-- 흰 건반 컨테이너 -->
@@ -60,7 +60,6 @@
               <div class="white-key" data-note="G"></div>
               <div class="white-key" data-note="A"></div>
               <div class="white-key" data-note="B"></div>
-              <div class="white-key" data-note="C2"></div>
             </div>
             <!-- 검은 건반 (위에 겹치게 배치) -->
             <div class="black-key c-sharp" data-note="C#"></div>
@@ -70,6 +69,16 @@
             <div class="black-key a-sharp" data-note="A#"></div>
           </div>
           <div class="record_buttons">
+            <p class="countdown-text" style="display: none">3초 전</p>
+            <!-- 카운트다운 표시 -->
+            <div class="recording-status" style="display: none">
+              <p class="recording-text">녹음 중...</p>
+              <img
+                class="recording-gif"
+                src="pictures/recording.gif"
+                alt="Recording Animation"
+              />
+            </div>
             <img
               class="startButton"
               src="pictures/start_button.png"

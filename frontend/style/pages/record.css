@@ -93,7 +93,7 @@
 /* 피아노 전체 컨테이너 */
 .piano {
   position: relative;
-  width: 480px; /* 8개의 흰 건반: 8 x 60px (여백 포함) */
+  width: 420px; /* 7개의 흰 건반: 7 x 60px (여백 포함) */
   height: 220px;
   margin: 20px auto;
   background: rgba(255, 255, 255, 0.6);
@@ -141,30 +141,30 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* 각 검은 건반의 위치 (흰 건반 폭 기준: 60px + 4px 여백 양쪽) */
-/* C# : 흰 건반 C와 D 사이 */
+/* 검은 건반 위치 (흰 건반 폭 기준: 60px + 4px 여백 양쪽) */
+/* C# : 도# (C와 D 사이) */
 .black-key.c-sharp {
   left: 42px;
 }
 
-/* D# : 흰 건반 D와 E 사이 */
+/* D# : 레# (D와 E 사이) */
 .black-key.d-sharp {
   left: 102px;
 }
 
 /* E와 F 사이엔 검은 건반 없음 */
 
-/* F# : 흰 건반 F와 G 사이 */
+/* F# : 파# (F와 G 사이) */
 .black-key.f-sharp {
   left: 222px;
 }
 
-/* G# : 흰 건반 G와 A 사이 */
+/* G# : 솔# (G와 A 사이) */
 .black-key.g-sharp {
   left: 282px;
 }
 
-/* A# : 흰 건반 A와 B 사이 */
+/* A# : 라# (A와 B 사이) */
 .black-key.a-sharp {
   left: 342px;
 }
@@ -181,4 +181,28 @@
   background: linear-gradient(to bottom, #444, #0f0f0f);
   transform: translateY(4px);
   transition: transform 0.1s ease, background 0.1s ease;
+}
+
+.countdown-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff7c98;
+  margin-bottom: 10px;
+}
+
+.recording-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* 텍스트와 GIF 사이 간격 */
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7c98;
+  margin-bottom: 10px;
+}
+
+.recording-gif {
+  width: 30px;
+  height: 30px;
 }
