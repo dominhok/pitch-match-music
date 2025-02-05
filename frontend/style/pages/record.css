@@ -9,7 +9,7 @@
   border-radius: 12px;
 
   position: relative;
-  bottom: 50px;
+  bottom: 20px;
 }
 
 .basic_box .procedure_box .procedure_title {
@@ -42,7 +42,7 @@
   line-height: 30px;
 
   position: relative;
-  bottom: 25px;
+  bottom: 5px;
 }
 
 .basic_box .piano_container {
@@ -71,8 +71,8 @@
   flex-direction: column; /* 버튼을 세로로 배열 */
   align-items: center; /* 버튼을 세로로 중앙 정렬 */
 
+  top: 20px;
   position: relative;
-  top: 50px;
 }
 
 .basic_box .record_buttons .startButton {
@@ -93,7 +93,7 @@
 /* 피아노 전체 컨테이너 */
 .piano {
   position: relative;
-  width: 480px;       /* 8개의 흰 건반: 8 x 60px (여백 포함) */
+  width: 480px; /* 8개의 흰 건반: 8 x 60px (여백 포함) */
   height: 220px;
   margin: 20px auto;
   background: rgba(255, 255, 255, 0.6);
@@ -101,6 +101,7 @@
   padding: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px); /* 유리 효과 */
+  top: 10px;
 }
 
 /* 흰 건반 컨테이너 */
@@ -181,6 +182,3 @@
   transform: translateY(4px);
   transition: transform 0.1s ease, background 0.1s ease;
 }
-
-
-
