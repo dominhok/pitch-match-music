@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat; /* 이미지 반복 방지 */
   background-position: center; /* 이미지 중앙 배치 */
   background-color: #ffe3e94c;
-  filter: blur(10px); /* 블러 효과 적용 */
+  filter: blur(11px); /* 블러 효과 적용 */
   z-index: -1; /* 다른 콘텐츠 뒤로 배치 */
 }
 
@@ -41,8 +41,7 @@ body {
   top: 0;
   left: 0;
   z-index: 10; /* 헤더가 배경 위에 표시되도록 설정 */
-  background-color: #ffffff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
 
 .header .logo {
