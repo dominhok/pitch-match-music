@@ -36,21 +36,34 @@
           <div class="procedure_box">
             <p class="procedure_title">측정 방법</p>
             <p class="procedure">
-              1. '시작하기' 버튼을 누른다.
+              1. 현재 옥타브 숫자를 눌러, 입력하실 옥타브를 선택해 주세요. (남: 3~4 옥타브 여: 4~5 옥타브)
               <br />
-              2. 소리가 나오면 해당 음을 1초동안 소리내어 녹음한다. (기회는 총
-              3번!) <br />
-              3. 측정이 완료되면 음역대 분석하기 버튼을 누른다.
+              2. 피아노의 건반을 누르시면, 녹음할 스케일을 들어볼 수 있습니다.<br />
+              3. 시작하기 버튼을 눌러, 피아노의 박자에 맞추어 스케일을 8초동안 소리내어 녹음해주세요.<br />
+              4. 전체 옥타브의 측정이 완료되면 음역대 분석하기 버튼을 눌러주세요.
             </p>
           </div>
           <div class="octave">
             <p>현재 옥타브: 4</p>
           </div>
-          <div class="note_text">
-            <p class="note_text">최고음 측정</p>
-          </div>
-          <div class="piano_container">
-            <img class="piano" src="pictures/piano.png" alt="Piano" />
+          <div class="piano">
+            <!-- 흰 건반 컨테이너 -->
+            <div class="white-keys">
+              <div class="white-key" data-note="C"></div>
+              <div class="white-key" data-note="D"></div>
+              <div class="white-key" data-note="E"></div>
+              <div class="white-key" data-note="F"></div>
+              <div class="white-key" data-note="G"></div>
+              <div class="white-key" data-note="A"></div>
+              <div class="white-key" data-note="B"></div>
+              <div class="white-key" data-note="C2"></div>
+            </div>
+            <!-- 검은 건반 (위에 겹치게 배치) -->
+            <div class="black-key c-sharp" data-note="C#"></div>
+            <div class="black-key d-sharp" data-note="D#"></div>
+            <div class="black-key f-sharp" data-note="F#"></div>
+            <div class="black-key g-sharp" data-note="G#"></div>
+            <div class="black-key a-sharp" data-note="A#"></div>
           </div>
           <div class="record_buttons">
               <img
@@ -69,6 +82,7 @@
         </div>
       </div>
     </div>
+    <script src="scripts/piano.js"></script>
     <script src="scripts/record.js"></script>
   </body>
 </html>
