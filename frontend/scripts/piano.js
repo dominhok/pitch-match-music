@@ -2,7 +2,7 @@
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
 // 현재 옥타브 (기본값 4)
-let currentOctave = 4;
+let currentOctave = 3;
 
 // 음의 반음 오프셋 (C4를 기준으로)
 const noteOffsets = {
