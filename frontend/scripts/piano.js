@@ -26,11 +26,10 @@ function getFrequency(note) {
   let octave = currentOctave;
   const offset = noteOffsets[note];
   if (offset === undefined) return null;
-  
+
   const frequency = 261.63 * Math.pow(2, octave - 4 + offset / 12);
   return frequency;
 }
-
 
 // 사인파로 음을 재생하는 함수 (페이드 인/아웃 적용)
 function playSine(note, duration = 0.5) {
