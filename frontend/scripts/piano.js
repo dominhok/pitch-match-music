@@ -97,10 +97,10 @@ function playSequence() {
       let key = document.querySelector(`[data-note="${note}"]`);
       if (key) {
         key.classList.add("active");
-        playSine(note, 0.3);
+        playSine(note, 1.8);
         setTimeout(() => key.classList.remove("active"), 300);
       }
-    }, index * 1000);
+    }, index * 2000);
   });
 }
 
