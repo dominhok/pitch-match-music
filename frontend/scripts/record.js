@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("playSequence 함수가 정의되어 있지 않습니다.");
       }
 
-      setTimeout(stopRecording, 7000);
+      setTimeout(stopRecording, 14000);
     } catch (error) {
       console.error("마이크 접근 권한이 필요합니다!", error);
     }
