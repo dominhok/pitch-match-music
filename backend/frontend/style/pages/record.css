@@ -1,0 +1,207 @@
+.basic_box .procedure_box {
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column;
+  justify-content: center; /* 수평 중앙 정렬 */
+
+  width: 780px;
+  height: 170px;
+  background-color: #f5f7ff;
+  border-radius: 12px;
+
+  position: relative;
+  bottom: 20px;
+}
+
+.basic_box .procedure_box .procedure_title {
+  font-weight: 700;
+  color: #98b5ff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.basic_box .procedure_box .procedure {
+  font-weight: 400;
+  color: #8e9aaf;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.basic_box .octave {
+  font-weight: 700;
+  color: #ff7c98;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+
+  position: relative;
+  top: 15px;
+}
+
+.basic_box .piano_container {
+  display: flex;
+  align-items: center;
+}
+
+.basic_box .piano_container .piano {
+  width: 200px;
+  height: 150px;
+}
+
+.note_text {
+  font-weight: 400;
+  color: #989898;
+  font-size: 14px;
+  white-space: nowrap;
+
+  position: relative;
+  left: 35px;
+  bottom: 2px;
+}
+
+.basic_box .record_buttons {
+  display: flex; /* Flexbox 활성화 */
+  flex-direction: column; /* 버튼을 세로로 배열 */
+  align-items: center; /* 버튼을 세로로 중앙 정렬 */
+
+  top: 20px;
+  position: relative;
+}
+
+.basic_box .record_buttons .startButton {
+  margin-top: 10px;
+  width: 200px; /* 버튼의 너비 */
+  height: auto; /* 버튼의 높이 */
+  cursor: pointer;
+}
+
+.basic_box .record_buttons .analysisButton_1 {
+  margin-top: 15px;
+  width: 200px; /* 버튼의 너비 */
+  height: auto; /* 버튼의 높이 */
+}
+
+/* style/piano.css */
+
+/* 피아노 전체 컨테이너 */
+.piano {
+  position: relative;
+  width: 420px; /* 7개의 흰 건반: 7 x 60px (여백 포함) */
+  height: 220px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px); /* 유리 효과 */
+  top: 10px;
+}
+
+/* 흰 건반 컨테이너 */
+.white-keys {
+  display: flex;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 흰 건반 */
+.white-key {
+  flex: 1;
+  height: 200px;
+  background: linear-gradient(to bottom, #fdfdfd, #f2f2f2);
+  border: 1px solid #ccc;
+  border-radius: 6px 6px 0 0;
+  margin: 0 2px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* 검은 건반 */
+.black-key {
+  position: absolute;
+  width: 40px;
+  height: 120px;
+  background: linear-gradient(to bottom, #333, #111);
+  border: 1px solid #444;
+  border-radius: 4px;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 검은 건반 위치 (흰 건반 폭 기준: 60px + 4px 여백 양쪽) */
+/* C# : 도# (C와 D 사이) */
+.black-key.c-sharp {
+  left: 42px;
+}
+
+/* D# : 레# (D와 E 사이) */
+.black-key.d-sharp {
+  left: 102px;
+}
+
+/* E와 F 사이엔 검은 건반 없음 */
+
+/* F# : 파# (F와 G 사이) */
+.black-key.f-sharp {
+  left: 222px;
+}
+
+/* G# : 솔# (G와 A 사이) */
+.black-key.g-sharp {
+  left: 282px;
+}
+
+/* A# : 라# (A와 B 사이) */
+.black-key.a-sharp {
+  left: 342px;
+}
+
+/* 클릭 애니메이션 (흰 건반) */
+.white-key.active {
+  background: linear-gradient(to bottom, #f7f7f7, #9c9c9c);
+  transform: translateY(4px);
+  transition: transform 0.1s ease, background 0.1s ease;
+}
+
+/* 클릭 애니메이션 (검은 건반) */
+.black-key.active {
+  background: linear-gradient(to bottom, #444, #0f0f0f);
+  transform: translateY(4px);
+  transition: transform 0.1s ease, background 0.1s ease;
+}
+
+.countdown-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff7c98;
+  margin-bottom: 10px;
+}
+
+.recording-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* 텍스트와 GIF 사이 간격 */
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7c98;
+  margin-bottom: 10px;
+}
+
+.recording-gif {
+  width: 30px;
+  height: 30px;
+}

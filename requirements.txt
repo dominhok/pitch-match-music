@@ -1,0 +1,4 @@
+fastapi>=0.95.1
+uvicorn[standard]>=0.22.0
+python-dotenv>=1.0.0
+aiofiles>=0.8.0

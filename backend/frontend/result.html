@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PitchMatch - Result</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/static/style/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/style/pages/result.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- 블러 처리된 배경 -->
+      <div class="background-blur"></div>
+
+      <!-- 헤더 -->
+      <header class="header">
+        <a href="/static/index.html">
+          <img
+            class="logo"
+            src="/static/pictures/logo.svg"
+            alt="PitchMatch Logo"
+          />
+        </a>
+      </header>
+
+      <!-- 콘텐츠 -->
+      <div class="container">
+        <!-- 네비게이션 바 추가 -->
+        <div class="nav-bar">
+          <a href="/static/record.html" class="nav-item">record</a>
+          <span class="nav-divider">></span>
+          <a href="/static/result.html" class="nav-item active">result</a>
+          <span class="nav-divider">></span>
+          <a href="/static/recommend.html" class="nav-item">recommend</a>
+        </div>
+        <div class="basic_box">
+          <div class="result">
+            <p>음역대 분석 결과</p>
+          </div>
+          <div class="info">
+            <p>2024년 02월 08일 분석</p>
+          </div>
+          <div class="range_box">
+            <p class="range_title">최대 음역 분석</p>
+            <p class="range_1">
+              당신의 최고음: <span id="highest_note">분석 중...</span>
+            </p>
+
+            <!-- 최고음 시각화: 수평 막대 그래프 -->
+            <div class="note_visualization">
+              <div class="note_bar">
+                <div class="note_fill" id="note_fill"></div>
+              </div>
+            </div>
+          </div>
+          <div class="compare_box">
+            <p class="compare_title">평균과의 비교</p>
+            <p class="compare_1">
+              최고음을 분석하여 결과를 도출하는 중입니다. 곧 결과를
+              알려드릴게요!
+            </p>
+          </div>
+          <a href="/static/recommend.html">
+            <img
+              class="discoverButton"
+              src="/static/pictures/recommendbutton.svg"
+              alt="Discover Button"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- result.js 로드 -->
+    <script src="/static/scripts/result.js"></script>
+    <script src="/static/scripts/discover.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+.range_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ✅ 왼쪽 정렬 */
+  width: 600px;
+  height: 170px;
+  background-color: #fef6f8;
+  border-radius: 12px;
+  padding: 25px; /* ✅ 내부 여백 추가 */
+}
+
+.range_box .range_title {
+  font-weight: 700;
+  color: #ff7c98;
+  font-size: 25px;
+  width: 100%;
+  text-align: left; /* ✅ 왼쪽 정렬 */
+}
+
+.range_box .range_1 {
+  font-weight: 400;
+  color: #8e9aaf;
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: left; /* ✅ 왼쪽 정렬 */
+  width: 100%;
+}
+
+/* ✅ 최고음 시각화 (수평 막대 그래프) */
+.note_visualization {
+  width: 100%;
+  max-width: 643px;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.note_bar {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  position: relative;
+}
+
+.note_fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #ff7c98, #98b5ff);
+  border-radius: 15px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* ✅ 평균과의 비교 섹션 추가 */
+.compare_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 600px;
+  height: 230px; /* ✅ 높이 고정 */
+  background-color: #f5f7ff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+  overflow: auto; /* ✅ 내부 스크롤 가능 */
+  max-height: 300px; /* ✅ 너무 길어질 경우 스크롤 */
+}
+
+.compare_box .compare_title {
+  font-weight: 700;
+  color: #98b5ff;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.compare_box .compare_1 {
+  font-weight: 400;
+  color: #8e9aaf;
+  font-size: 16px;
+  line-height: 1.8; /* ✅ 문장 간 간격 조정 */
+  word-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+  max-height: 180px; /* ✅ 길어질 경우 스크롤 */
+  overflow-y: auto; /* ✅ 수직 스크롤 가능 */
+  padding-right: 10px; /* ✅ 스크롤바와 텍스트 간 여백 추가 */
+}
+
+.basic_box .result {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  color: #ff7c98;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 30px;
+
+  position: relative;
+  bottom: 10px;
+}
+
+.basic_box .info {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  color: #8e9aaf;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 30px;
+
+  position: relative;
+  bottom: 10px;
+}
+
+.discoverButton {
+  margin-top: 30px;
+  width: 600px; /* 버튼의 너비 */
+  height: auto; /* 버튼의 높이 */
+  cursor: pointer;
+}

@@ -1,1 +1,3 @@
-dataset/
+backend/cert.pem
+backend/key.pem
+uploaded_files/*

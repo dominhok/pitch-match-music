@@ -1,0 +1,43 @@
+.microphone_box {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 20vh;
+  text-align: center;
+  color: #666666;
+  font-size: 20px;
+}
+
+.microphone {
+  width: 100%;
+  height: auto;
+}
+
+.welcome_box {
+  position: relative;
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  width: 700px;
+  height: 250px;
+  top: 70px;
+  background-color: #ffffffd9;
+  border-radius: 12px;
+}
+
+.welcome_box .logo {
+  width: 230px;
+  height: auto;
+}
+
+.welcome_box .welcome {
+  font-weight: 400;
+  color: #666666;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 0;
+  line-height: 30px;
+}

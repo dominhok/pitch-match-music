@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PitchMatch - Record</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/pages/record.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 블러 처리된 배경 -->
+      <div class="background-blur"></div>
+
+      <!-- 헤더 -->
+      <header class="header">
+        <a href="index.html">
+          <img class="logo" src="pictures/logo.svg" alt="PitchMatch Logo" />
+        </a>
+      </header>
+
+      <!-- 콘텐츠 -->
+      <div class="container">
+        <!-- 네비게이션 바 추가 -->
+        <div class="nav-bar">
+          <a href="record.html" class="nav-item active">record</a>
+          <span class="nav-divider">></span>
+          <a href="result.html" class="nav-item">result</a>
+          <span class="nav-divider">></span>
+          <a href="recommend.html" class="nav-item">recommend</a>
+        </div>
+        <!-- 네비게이션 바 추가 끝 -->
+        <div class="basic_box">
+          <div class="procedure_box">
+            <p class="procedure_title">측정 방법</p>
+            <p class="procedure">
+              1. 현재 옥타브 숫자를 눌러, 입력하실 옥타브를 선택해 주세요. (남:
+              3~4 옥타브 여: 4~5 옥타브)
+              <br />
+              2. 피아노의 첫번째 건반을 누르시면, 녹음할 스케일을 들어볼 수
+              있습니다.<br />
+              3. 시작하기 버튼을 눌러, 피아노의 박자에 맞추어 스케일을 2초
+              간격으로 소리내어 녹음해주세요.
+            </p>
+          </div>
+          <div class="octave">
+            <p>현재 옥타브: 3</p>
+          </div>
+          <div class="piano">
+            <!-- 흰 건반 컨테이너 -->
+            <div class="white-keys">
+              <div class="white-key" data-note="C"></div>
+              <div class="white-key" data-note="D"></div>
+              <div class="white-key" data-note="E"></div>
+              <div class="white-key" data-note="F"></div>
+              <div class="white-key" data-note="G"></div>
+              <div class="white-key" data-note="A"></div>
+              <div class="white-key" data-note="B"></div>
+            </div>
+            <!-- 검은 건반 (위에 겹치게 배치) -->
+            <div class="black-key c-sharp" data-note="C#"></div>
+            <div class="black-key d-sharp" data-note="D#"></div>
+            <div class="black-key f-sharp" data-note="F#"></div>
+            <div class="black-key g-sharp" data-note="G#"></div>
+            <div class="black-key a-sharp" data-note="A#"></div>
+          </div>
+          <div class="record_buttons">
+            <p class="countdown-text" style="display: none">3초 전</p>
+            <!-- 카운트다운 표시 -->
+            <div class="recording-status" style="display: none">
+              <p class="recording-text">녹음 중...</p>
+              <img
+                class="recording-gif"
+                src="pictures/recording.gif"
+                alt="Recording Animation"
+              />
+            </div>
+            <img
+              class="startButton"
+              src="pictures/startbutton.svg"
+              alt="Start Button"
+            />
+            <a href="result.html">
+              <img
+                class="analysisButton_1"
+                src="pictures/analyzebutton_nonactive.svg"
+                alt="Analysis Button 1"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/piano.js"></script>
+    <script src="scripts/record.js"></script>
+    <script src="scripts/analys.js"></script>
+  </body>
+</html>

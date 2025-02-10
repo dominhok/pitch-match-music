@@ -1,0 +1,172 @@
+/* 슬라이더 래퍼: 좌우 버튼과 뷰포트를 중앙 정렬 */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+/* 슬라이더 뷰포트: 한 슬라이드만 보이도록 고정 */
+.slider-viewport {
+  width: 600px; /* 이전 700px에서 줄여서 600px로 조정 */
+  height: 380px; /* 슬라이드 높이도 줄임 */
+  overflow: hidden;
+  position: relative;
+}
+
+/* 슬라이더: 내부 슬라이드들을 수평으로 나열 */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* 각 슬라이드(장르 컨테이너) */
+.slide {
+  flex: 0 0 600px; /* 뷰포트 너비와 동일하게 600px */
+  height: 380px; /* 뷰포트 높이와 동일 */
+  background-color: #f5f7ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* 슬라이드 내부 장르 타이틀 */
+.slide .recommend_title {
+  font-weight: 400;
+  color: #98b5ff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* 슬라이드 내부 개별 추천 항목 */
+.slide .recommend_item {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 좌우 슬라이더 버튼: 배경을 투명하게 하고 둥근 모양 없이 단순 화살표 형태로 */
+.slider-btn {
+  background-color: transparent;
+  border: none;
+  color: #c4d5ff;
+  font-size: 100px;
+  font-weight: normal;
+  padding: 0 15px; /* 좌우 여백만 부여 */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.slider-btn:hover {
+  color: #7a9bd4;
+}
+
+/* 음악 버튼 (기존 스타일 유지) */
+.musicButton {
+  margin-top: 30px;
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+}
+
+/* 슬라이더 Indicator 스타일 */
+.slider-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d9d9d9; /* 기본 회색 */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #98b5ff; /* 활성화된 점 - 진한 회색 */
+}
+
+/* 장르 제목 스타일 */
+.genre-title {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #97a4ff;
+  margin-top: 3px;
+  margin-left: 8px;
+  margin-bottom: 23px;
+}
+
+/* 장르별 컨테이너 */
+.genre-container {
+  background-color: #f8f9ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* 노래 카드 스타일 */
+.song-card {
+  background-color: white;
+  padding: 18px 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 노래 제목 스타일 */
+.song-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+}
+
+/* 가수 이름 스타일 */
+.song-artist {
+  font-size: 14px;
+  color: #8e9aaf;
+  margin-top: 10px;
+}
+
+/* 최고음 표시 스타일 */
+.highest-note {
+  background-color: #f1f3f9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #98b5ff;
+}
+
+.basic_box .result {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  color: #ff7c98;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 30px;
+  bottom: 5px;
+
+  position: relative;
+}
+
+.basic_box .info {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  color: #8e9aaf;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 30px;
+  bottom: 5px;
+
+  position: relative;
+}

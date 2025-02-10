@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PitchMatch - Recommend</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/pages/recommend.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 블러 처리된 배경 -->
+      <div class="background-blur"></div>
+      <!-- 헤더 -->
+      <header class="header">
+        <a href="index.html">
+          <img class="logo" src="pictures/logo.svg" alt="PitchMatch Logo" />
+        </a>
+      </header>
+      <!-- 콘텐츠 -->
+      <div class="container">
+        <!-- 네비게이션 바 추가 -->
+        <div class="nav-bar">
+          <a href="record.html" class="nav-item">record</a>
+          <span class="nav-divider">></span>
+          <a href="result.html" class="nav-item">result</a>
+          <span class="nav-divider">></span>
+          <a href="recommend.html" class="nav-item active">recommend</a>
+        </div>
+        <div class="basic_box">
+          <div class="result">
+            <p>맞춤 음악 추천</p>
+          </div>
+          <div class="info">
+            <p>
+              당신의 음역대에 딱 맞는 <strong>발라드</strong>,
+              <strong>밴드</strong>, <strong>K-POP</strong>,
+              <strong>POP</strong>, <strong>R&B</strong> 곡을 추천해드릴게요!
+            </p>
+          </div>
+          <!-- 슬라이더 래퍼: 좌우 버튼과 뷰포트를 포함 -->
+          <div class="slider-wrapper">
+            <button id="prevBtn" class="slider-btn">‹</button>
+            <div class="slider-viewport">
+              <div id="slider" class="slider">
+                <!-- 각 슬라이드는 JS에서 동적으로 생성됩니다. -->
+              </div>
+            </div>
+            <button id="nextBtn" class="slider-btn">›</button>
+          </div>
+          <!-- 슬라이더 Indicator 추가 -->
+          <div class="slider-indicator">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <a id="playAllBtn">
+            <img
+              class="musicButton"
+              src="pictures/recommendsongbutton.svg"
+              alt="Play All Songs"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 슬라이더 기능 및 추천 데이터 처리를 위한 스크립트 -->
+    <script src="scripts/recommend.js"></script>
+  </body>
+</html>
