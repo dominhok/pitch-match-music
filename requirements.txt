@@ -1,4 +1,23 @@
-fastapi>=0.95.1
-uvicorn[standard]>=0.22.0
-python-dotenv>=1.0.0
-aiofiles>=0.8.0
+# FastAPI 및 서버 실행 관련
+fastapi
+uvicorn
+
+# 데이터 유효성 검사
+pydantic
+
+# 오디오 처리 관련
+pydub
+numpy
+torchaudio
+librosa
+pesto  # 음역 분석 라이브러리
+
+# 데이터 처리 및 추천 시스템 관련
+pandas
+scipy
+
+# API 요청 및 JSON 처리
+requests
+
+# 로깅 및 기타 유틸
+logging
