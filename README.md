@@ -2,15 +2,12 @@
 
 **PitchMatch**는 사용자의 **음역대**를 분석하여 **맞춤 음악을 추천하는 서비스**입니다.  
 🎤 **마이크로 녹음한 목소리를 분석**하여 최고 음역을 감지하고, **개인화된 음악 추천**을 제공합니다.  
-🔗 [PitchMatch 홈페이지](https://pitchmatch.store)
 
 ## 📌 주요 기능
 
 - 🎙 **음역대 분석**: 사용자의 최고 음역을 감지하여 분석
 - 🎼 **맞춤 음악 추천**: 최고음에 맞는 음악을 추천
 - 🎵 **YouTube API 연동**: 추천 음악을 바로 감상 가능
-- 💻 **정적 웹사이트 + FastAPI 백엔드**: 프론트엔드 & 백엔드 통합 운영
-- 🔒 **HTTPS 지원**: 보안 강화를 위한 `Let's Encrypt` 기반 SSL 적용
 
 ## 🛠️ 기술 스택
 
@@ -19,8 +16,8 @@
 | **Frontend** | HTML, CSS, JavaScript |
 | **Backend** | FastAPI (Python) |
 | **Database** | CSV (음악 데이터 저장) |
-| **API 연동** | YouTube Data API |
-| **Hosting** | Cloudflare /FastAPI |
+| **API 연동** | YouTube Data API, OpenAI GPT-4 API |
+| **Hosting** | FastAPI |
 
 ## 🚀 시작하기
 
